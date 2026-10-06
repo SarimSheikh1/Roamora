@@ -1,0 +1,29 @@
+export type Trip = {slug:string; name:string; country:string; image:string; tag:string; days:number; price:number; summary:string; itinerary:string[]; includes:string[]};
+export const trips: Trip[] = [
+ {slug:'bali',name:'A slower kind of Bali',country:'Indonesia',image:'/images/bali.jpg',tag:'ISLAND ESCAPE',days:7,price:185000,summary:'Unwind between rice terraces, quiet beaches and the creative streets of Ubud.',itinerary:['Arrive and settle into Ubud','Rice terraces and local craft studios','Waterfalls and village walks','Transfer to the coast','Beach day at your own pace','Sunset dinner and free time','Breakfast and airport transfer'],includes:['6 nights in boutique hotels','Daily breakfast','Private airport transfers','Two guided day trips']},
+ {slug:'turkiye',name:'Türkiye, beyond the ordinary',country:'Türkiye',image:'/images/turkiye.jpg',tag:'CULTURE & DISCOVERY',days:8,price:245000,summary:'Discover Istanbul’s layered history and Cappadocia’s extraordinary valleys.',itinerary:['Welcome to Istanbul','Old city walking tour','Bosphorus and neighbourhoods','Flight to Cappadocia','Valleys and cave villages','Free day; optional balloon flight','Return to Istanbul','Departure transfer'],includes:['7 nights accommodation','Daily breakfast','Domestic flights estimate','Local guided experiences']},
+ {slug:'hunza',name:'Find your quiet in Hunza',country:'Pakistan',image:'/images/hunza.jpg',tag:'CLOSER TO HOME',days:6,price:85000,summary:'Mountain mornings, turquoise water and time to breathe in northern Pakistan.',itinerary:['Meet in Islamabad','Scenic drive toward the mountains','Explore Karimabad and forts','Attabad Lake and village visit','A slow mountain morning','Return journey'],includes:['5 nights accommodation','Breakfast and dinner','Shared road transport','Local guide']},
+];
+export const nav = [{label:'Discover',href:'/tours'},{label:'Packages',href:'/packages'},{label:'Visa assistance',href:'/visa'},{label:'Our story',href:'/about'}];
+export const services = [
+ {slug:'flights',name:'Flight planning',icon:'plane',text:'Compare routes, baggage and timings with a human who understands your journey.'},
+ {slug:'visa',name:'Visa assistance',icon:'passport',text:'Clear document checklists and careful application preparation, from start to submission.'},
+ {slug:'packages',name:'Tailored holidays',icon:'map',text:'Thoughtful stays and memorable experiences, built around your pace and budget.'},
+ {slug:'umrah',name:'Umrah journeys',icon:'heart',text:'Plan accommodation, transport and the practical details of your spiritual journey.'},
+ {slug:'insurance',name:'Travel insurance',icon:'shield',text:'Understand coverage options, exclusions and assistance before you leave.'},
+ {slug:'contact',name:'Hotels & transfers',icon:'hotel',text:'A comfortable place to land and reliable connections along the way.'},
+];
+export const visas = [{country:'Türkiye',code:'TR',type:'Visitor visa guidance'},{country:'United Arab Emirates',code:'AE',type:'Tourist visa assistance'},{country:'United Kingdom',code:'GB',type:'Visitor application preparation'},{country:'Schengen area',code:'EU',type:'Short-stay document support'},{country:'Malaysia',code:'MY',type:'Travel document guidance'},{country:'Indonesia',code:'ID',type:'Visitor document support'}];
+export const faqs = [
+ {q:'Can you build a trip around my budget?',a:'Yes. Tell us your preferred dates, departure city and budget. We can suggest a route and explain the trade-offs between hotels, transport and activities.'},
+ {q:'Are the prices shown final booking prices?',a:'No. The displayed packages are sample itineraries with illustrative starting estimates in PKR per person, based on twin sharing. Flights, visa fees, seasonal changes and optional activities may cost extra. Request a written quote before booking.'},
+ {q:'Does visa assistance guarantee approval?',a:'No. We help organise documents and prepare applications. Visa decisions and processing times are controlled by the relevant authorities.'},
+ {q:'How does application tracking work here?',a:'The tracker is a demonstration using sample references. It does not connect to embassy or government systems. Try RM-DEMO-001 to explore the timeline.'},
+ {q:'Can I change or cancel a booking?',a:'Cancellation and change terms depend on the airline, hotel and service provider. Ask for the specific written terms before paying for any booking.'},
+];
+export const reviews = [{name:'Ayesha M.',place:'Island holiday',quote:'The itinerary left room to actually enjoy the place. The little details made the whole trip feel easy.'},{name:'Hamza R.',place:'Mountain escape',quote:'A great balance of exploring and slowing down. The mountain mornings were the highlight.'},{name:'Sara K.',place:'City & culture',quote:'Clear guidance and a thoughtful route. We knew what to expect at every step.'}];
+export const detailServices:Record<string,{title:string;intro:string;steps:string[]}> = {
+ flights:{title:'A better route to your next chapter.',intro:'Plan your flight with clear comparisons, sensible connections and transparent baggage information.',steps:['Share your route, dates and number of travellers','Compare schedule, baggage and fare conditions','Review a written quote before ticketing']},
+ umrah:{title:'A thoughtful journey of faith.',intro:'Explore an Umrah plan shaped around your preferred dates, accommodation needs and family.',steps:['Choose your travel dates and room arrangement','Discuss Makkah and Madinah accommodation','Review transport, document requirements and a detailed quote']},
+ insurance:{title:'Travel with a little more peace of mind.',intro:'Discuss suitable travel insurance options and understand the policy before making a decision.',steps:['Tell us your destination, dates and traveller ages','Review coverage, limits and exclusions','Confirm the provider’s policy documents and assistance contacts']},
+};
